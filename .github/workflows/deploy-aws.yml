@@ -2,7 +2,7 @@ name: Deploy model to AWS
 on:
   push:
     branches:
-      - "Docker-compose-CI/CD-AWS-Beanstalk"
+      - "main"
 
 jobs:
   deploy: 
