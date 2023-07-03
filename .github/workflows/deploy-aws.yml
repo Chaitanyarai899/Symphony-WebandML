@@ -22,6 +22,6 @@ jobs:
           application_name: symphonyai
           environment_name: symphonyai-env
           version_label: ${{ github.sha }}
-          existing_bucket_name: elasticbeanstalk-us-east-1-842413253702
+          existing_bucket_name: codepipeline-eu-north-1-644283368671
           region: eu-north-1
           deployment_package: deploy.zip
