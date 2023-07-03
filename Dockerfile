@@ -1,4 +1,7 @@
-FROM python:3
+# Dockerfile
+
+# Stage 1: Python server
+FROM python:3 as server
 
 WORKDIR /app
 
@@ -11,9 +14,10 @@ COPY ./Ml-model\ and\ Backend ./
 
 CMD [ "python", "app.py" ]
 
-FROM node:14-slim
+# Stage 2: Node.js web client
+FROM node:14-slim as client
 
-WORKDIR /user/client/src/app
+WORKDIR /app
 
 COPY ./client/package.json ./
 COPY ./client/package-lock.json ./
