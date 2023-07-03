@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  server:
+   build: ./Ml-model and Backend
+   ports:
+   - "5000:5000"
+   volumes:
+   - ./Ml-model and Backend:/app
+  
+  web:
+   build: ./client
+   ports:
+    - "3000:3000"
+   volumes:
+    - ./client:/user/src/app
+   depends_on:
+    - server
+
+
+
+
+  
