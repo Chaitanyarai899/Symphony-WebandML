@@ -23,5 +23,5 @@ jobs:
           environment_name: symphonyai-env
           version_label: ${{ github.sha }}
           existing_bucket_name: elasticbeanstalk-us-east-1-842413253702
-          region: us-east-1
+          region: eu-north-1
           deployment_package: deploy.zip
