@@ -1,5 +1,5 @@
 {
-    "AWSEBDockerrunVersion": "1",
+    "AWSEBDockerrunVersion": 2,
     "containerDefinitions": [
       {
         "name": "server",
