@@ -3,7 +3,7 @@
     "containerDefinitions": [
       {
         "name": "server",
-        "image": "serverimage",
+        "image": "chaitanyarai/soundai:serverimage",
         "essential": true,
         "portMappings": [
           {
@@ -20,7 +20,7 @@
       },
       {
         "name": "web",
-        "image": "clientimage",
+        "image": "chaitanyarai/soundai:clientimage",
         "essential": true,
         "portMappings": [
           {
