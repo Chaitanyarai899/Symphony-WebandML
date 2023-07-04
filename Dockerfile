@@ -1,10 +1,10 @@
 FROM node:14-slim
 
-WORKDIR /user/client/src/app
+WORKDIR /user/src/app
 
-COPY . /package.json ./
+COPY ./client /package.json ./
 
-COPY . /package-lock.json ./
+COPY ./client /package-lock.json ./
 
 RUN npm install
 
