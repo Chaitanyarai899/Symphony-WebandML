@@ -3,7 +3,7 @@ from flask_cors import CORS
 from webControllers import recommend_songs, recommend_playlist
 import pandas as pd
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../build', static_url_path='/')
 CORS(app)
 
 data = pd.read_csv("./data/data.csv")

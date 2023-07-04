@@ -1,0 +1,57 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "containerDefinitions": [
+      {
+        "name": "server",
+        "image": "server",
+        "essential": true,
+        "portMappings": [
+          {
+            "hostPort": 5000,
+            "containerPort": 5000
+          }
+        ],
+        "mountPoints": [
+          {
+            "sourceVolume": "server",
+            "containerPath": "/app"
+          }
+        ]
+      },
+      {
+        "name": "web",
+        "image": "web",
+        "essential": true,
+        "portMappings": [
+          {
+            "hostPort": 3000,
+            "containerPort": 3000
+          }
+        ],
+        "mountPoints": [
+          {
+            "sourceVolume": "web",
+            "containerPath": "/user/src/app"
+          }
+        ],
+        "links": [
+          "server"
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "name": "server",
+        "host": {
+          "sourcePath": "./server"
+        }
+      },
+      {
+        "name": "web",
+        "host": {
+          "sourcePath": "./client"
+        }
+      }
+    ]
+  }
+  

@@ -2,12 +2,12 @@ version: "3.9"
 services:
   server:
     build: 
-      context: ./Ml-model\ and\ Backend
+      context: ./server
       dockerfile: Dockerfile
     ports:
       - "5000:5000"
-    volumes:
-      - ./Ml-model\ and\ Backend:/app
+    volumes:                         
+      - ./server:/app
   
   web:
     build: 
