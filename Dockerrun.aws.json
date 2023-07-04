@@ -3,7 +3,7 @@
     "containerDefinitions": [
       {
         "name": "server",
-        "image": "server",
+        "image": "serverimage",
         "essential": true,
         "portMappings": [
           {
@@ -20,7 +20,7 @@
       },
       {
         "name": "web",
-        "image": "web",
+        "image": "clientimage",
         "essential": true,
         "portMappings": [
           {
