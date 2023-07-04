@@ -52,6 +52,16 @@
           "sourcePath": "./client"
         }
       }
+    ],
+    "ports": [
+      {
+        "hostPort": 5000,
+        "containerPort": 5000
+      },
+      {
+        "hostPort": 3000,
+        "containerPort": 3000
+      }
     ]
   }
   
