@@ -22,9 +22,9 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: symphonyai
-          environment_name: symphonyai-env
+          application_name: symphony
+          environment_name: symphony-env
           version_label: ${{ github.sha }}
-          existing_bucket_name: elasticbeanstalk-eu-north-1-835387152576
-          region: eu-north-1
+          existing_bucket_name: elasticbeanstalk-ap-south-1-835387152576
+          region: ap-south-1
           deployment_package: ./client/deploy.tar
