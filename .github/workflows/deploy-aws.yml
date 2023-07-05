@@ -12,7 +12,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Generate deployment package
-        run: zip -r deploy.zip . -x '*.git*'
+        run: |
+          cd ../client
+          docker build -t my-docker-image .
+          docker save -o deploy.tar my-docker-image
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
@@ -24,4 +27,4 @@ jobs:
           version_label: ${{ github.sha }}
           existing_bucket_name: elasticbeanstalk-eu-north-1-835387152576
           region: eu-north-1
-          deployment_package: deploy.zip
+          deployment_package: ../client/deploy.tar
