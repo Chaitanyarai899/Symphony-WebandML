@@ -5,8 +5,8 @@ import MovieCard from "./MovieCard";
 import "./index.css";
 import Dashboard from "./Dashboard";
 
-const API_URL = "http://127.0.0.1:5000/recommend";
-const API_URL_PLAYLIST = "http://127.0.0.1:5000/recommend_playlist";
+const API_URL = "https://symphonyserver.onrender.com/recommend";
+const API_URL_PLAYLIST = "https://symphonyserver.onrender.com/recommend_playlist";
 
 const Webapp = () => {
   const [searchTerm, setSearchTerm] = useState("Gravity");
