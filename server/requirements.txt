@@ -9,3 +9,4 @@ seaborn
 plotly
 scipy
 scikit-learn
+waitress
