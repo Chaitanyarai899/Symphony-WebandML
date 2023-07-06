@@ -24,4 +24,4 @@ jobs:
           version_label: ${{ github.sha }}
           existing_bucket_name: elasticbeanstalk-ap-south-1-835387152576
           region: ap-south-1
-          deployment_package: ./client/deploy.tar
+          deployment_package: deploy.zip
