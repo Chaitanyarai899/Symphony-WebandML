@@ -5,17 +5,14 @@ on:
       - "main"
 
 jobs:
-  deploy: 
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
 
       - name: Generate deployment package
-        run: |
-          cd ./client
-          docker build -t my-docker-image .
-          docker save -o deploy.tar my-docker-image
+        run: zip -r deploy.zip . -x '*.git*'
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
