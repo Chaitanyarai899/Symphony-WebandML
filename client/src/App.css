@@ -32,7 +32,7 @@ h1 {
   letter-spacing: 0.9px;
   background: linear-gradient(
     90deg,
-    rgba(249, 211, 180, 1) 100%,
+    rgb(6, 156, 23) 100%,
     rgba(233, 194, 163, 0) 100%
   );
   background-clip: text;
@@ -101,7 +101,7 @@ h1 {
 
 .empty h2 {
   font-size: 1.25rem;
-  color: #f9d3b4;
+  color: #0ba315;
   font-family: var(--font-raleway);
 }
 
