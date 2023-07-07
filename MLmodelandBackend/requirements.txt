@@ -1,0 +1,12 @@
+Flask
+Flask-Cors
+Flask-RESTful
+Flask-SQLAlchemy
+pandas
+numpy
+spotipy
+seaborn
+plotly
+scipy
+scikit-learn
+waitress
