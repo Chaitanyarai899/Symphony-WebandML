@@ -22,5 +22,9 @@ Services at the following link: http://symmphonyai.s3-website.ap-south-1.amazona
 
 
 ## Project Description
-(Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
+The ml model, EDA jupyter notebook and flask server are in the ML model and backend folder. The react and Java Script frontend Website is in the client folder.
+
+## Here is a screen recording of the working Webapp:
+
+https://github.com/Chaitanyarai899/Symphony-EDA-and-ML-Model/assets/95732261/01ec7bb9-cabd-46f5-aae2-a91241561f92
 
