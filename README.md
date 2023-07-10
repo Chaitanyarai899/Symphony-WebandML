@@ -1,5 +1,5 @@
 # Symphony - END to END Data Science and Machine Learning Project
-Symphony is a full-stack Data Science project which utilises Machine Learining, API Integration, frontend and Backend development to create an interractive Webapp for
+Symphony is a full-stack Data Science project which utilizes Machine Learining, API Integration, frontend and Backend development to create an interactive Webapp for
 songs and playlist recommendations. Additionaly, a Tableau dashboard is embedded in the webapp is dockerised and a CI/CD pipeline has been setup as well. The Webapp is deployed on Amazon Web
 Services at the following link: http://symmphonyai.s3-website.ap-south-1.amazonaws.com
 
