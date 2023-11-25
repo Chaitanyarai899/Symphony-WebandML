@@ -31,3 +31,5 @@ jobs:
         with:
           push: true
           tags: chaitanyarai/symphony:06
+          context: ./MLmodelandBackend  
+          file: ./MLmodelandBackend/Dockerfile
